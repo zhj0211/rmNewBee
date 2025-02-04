@@ -3,19 +3,18 @@
 #include<string>
 #include<sstream>
 #include<vector>
-
+#include<climits>
 using namespace std;
 
-void findThenearestEnemy(){
-
-}
 
 int main(){
     int dir[4][2] = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}}; // 上、右、下、左
     int add[2] = {0, 0}; 
+    int enemyX[100], enemyY[100];
+    int enemyCount = 0;
     string input;
     int i = 0; 
-    std::cout << "开始" << std::endl;
+    cout << "开始" << endl;
     while(true){
         getline(cin, input);
         istringstream iss(input);      
@@ -74,30 +73,53 @@ int main(){
 
         cout << "位置: (" << add[0] << ", " << add[1] << "), 方向: " << direction << endl;
 
+
+       
+        
+
         if(tokens[0][0] == 'x'){
-            int enemyX = stoi(tokens[1]);
-            int enemyY = stoi(tokens[2]);
+            int minDist = INT_MAX;
+            int minIndex = -1;
+
+            enemyX[enemyCount] = stoi(tokens[1]);
+            enemyY[enemyCount] = stoi(tokens[2]);
+            
+            enemyCount++;
+
             int current_add[2];
             int current_dir = i;
             copy(add, add + 2, current_add);
-            int dx = enemyX - current_add[0];
-            int dy = enemyY - current_add[1];
+           
           
+            for(int j = 0; j < enemyCount; j++){
+                int dx = enemyX[j] - current_add[0];
+                int dy = enemyY[j] - current_add[1];
+                int manhattan_dist = abs(dx) + abs(dy);
+                if(manhattan_dist < minDist){
+                    minDist = manhattan_dist;
+                    minIndex = j;
+                }
+            }
 
-            cout << "最近敌人的位置: (" << enemyX << ", " << enemyY << "),  所需控制操作: [";
+            if(minIndex == -1) {
+                cout << "错误" << endl;
+                continue;
+            }
+
+            cout << "最近敌人的位置: (" << enemyX[minIndex] << ", " << enemyY[minIndex] << "),  所需控制操作: [";
 
             while(true){
-                int dx = enemyX - current_add[0];
-                int dy = enemyY - current_add[1];
+                int dx = enemyX[minIndex] - current_add[0];
+                int dy = enemyY[minIndex] - current_add[1];
                 int distance = abs(dx) + abs(dy);
                 if(current_dir == 0){
                     
                     if(dy > 0){
                         cout << "w " << dy << ", ";
-                        current_add[1] = enemyY;
+                        current_add[1] = enemyY[minIndex];
                     }else if(dy < 0){
                          cout << "s " << -dy << ", ";
-                         current_add[1] = enemyY;
+                         current_add[1] = enemyY[minIndex];
                     }
                     if(dx > 0){
                         cout << "d, ";
@@ -109,10 +131,10 @@ int main(){
                 }else if(current_dir == 1){
                     if(dx > 0){
                         cout << "w " << dx << ", ";
-                        current_add[0] = enemyX;
+                        current_add[0] = enemyX[minIndex];
                     }else if(dx < 0){
                         cout << "s " << -dx << ", ";
-                        current_add[0] = enemyX;
+                        current_add[0] = enemyX[minIndex];
                     }
                     if(dy > 0){
                         cout << "a, ";
@@ -125,10 +147,10 @@ int main(){
                     
                     if(dy < 0){
                         cout << "w " << dy << ", ";
-                        current_add[1] = enemyY;
+                        current_add[1] = enemyY[minIndex];
                     }else if(dy > 0){
                          cout << "s " << -dy << ", ";
-                         current_add[1] = enemyY;
+                         current_add[1] = enemyY[minIndex];
                     }
                     if(dx < 0){
                         cout << "d, ";
@@ -140,10 +162,10 @@ int main(){
                 }else if(current_dir == 3){
                     if(dx < 0){
                         cout << "w " << dx << ", ";
-                        current_add[0] = enemyX;
+                        current_add[0] = enemyX[minIndex];
                     }else if(dx > 0){
                         cout << "s " << -dx << ", ";
-                        current_add[0] = enemyX;
+                        current_add[0] = enemyX[minIndex];
                     }
                     if(dy < 0){
                         cout << "a, ";

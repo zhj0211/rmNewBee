@@ -1,0 +1,3 @@
+C:/Dev/GKD/zhj/build/CMakeFiles/week2.dir
+C:/Dev/GKD/zhj/build/CMakeFiles/edit_cache.dir
+C:/Dev/GKD/zhj/build/CMakeFiles/rebuild_cache.dir

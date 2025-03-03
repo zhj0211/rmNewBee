@@ -8,9 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Dev/GKD/zhj/week2/main.cpp" "CMakeFiles/week2.dir/week2/main.cpp.obj" "gcc" "CMakeFiles/week2.dir/week2/main.cpp.obj.d"
-  "C:/Dev/GKD/zhj/week2/src/robot.cpp" "CMakeFiles/week2.dir/week2/src/robot.cpp.obj" "gcc" "CMakeFiles/week2.dir/week2/src/robot.cpp.obj.d"
-  "C:/Dev/GKD/zhj/week2/src/task.cpp" "CMakeFiles/week2.dir/week2/src/task.cpp.obj" "gcc" "CMakeFiles/week2.dir/week2/src/task.cpp.obj.d"
+  "C:/Dev/GKD/zhj/week3/main.cpp" "CMakeFiles/week3.dir/week3/main.cpp.obj" "gcc" "CMakeFiles/week3.dir/week3/main.cpp.obj.d"
+  "C:/Dev/GKD/zhj/week3/src/robot.cpp" "CMakeFiles/week3.dir/week3/src/robot.cpp.obj" "gcc" "CMakeFiles/week3.dir/week3/src/robot.cpp.obj.d"
+  "C:/Dev/GKD/zhj/week3/src/task.cpp" "CMakeFiles/week3.dir/week3/src/task.cpp.obj" "gcc" "CMakeFiles/week3.dir/week3/src/task.cpp.obj.d"
+  "C:/Dev/GKD/zhj/week3/src/taskScheduler.cpp" "CMakeFiles/week3.dir/week3/src/taskScheduler.cpp.obj" "gcc" "CMakeFiles/week3.dir/week3/src/taskScheduler.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

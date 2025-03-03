@@ -117,89 +117,113 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named week2
+# Target rules for targets named week3
 
 # Build rule for target.
-week2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 week2
-.PHONY : week2
+week3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 week3
+.PHONY : week3
 
 # fast build rule for target.
-week2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/week2.dir/build.make CMakeFiles/week2.dir/build
-.PHONY : week2/fast
+week3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/week3.dir/build.make CMakeFiles/week3.dir/build
+.PHONY : week3/fast
 
-week2/main.obj: week2/main.cpp.obj
-.PHONY : week2/main.obj
-
-# target to build an object file
-week2/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/week2.dir/build.make CMakeFiles/week2.dir/week2/main.cpp.obj
-.PHONY : week2/main.cpp.obj
-
-week2/main.i: week2/main.cpp.i
-.PHONY : week2/main.i
-
-# target to preprocess a source file
-week2/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/week2.dir/build.make CMakeFiles/week2.dir/week2/main.cpp.i
-.PHONY : week2/main.cpp.i
-
-week2/main.s: week2/main.cpp.s
-.PHONY : week2/main.s
-
-# target to generate assembly for a file
-week2/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/week2.dir/build.make CMakeFiles/week2.dir/week2/main.cpp.s
-.PHONY : week2/main.cpp.s
-
-week2/src/robot.obj: week2/src/robot.cpp.obj
-.PHONY : week2/src/robot.obj
+week3/main.obj: week3/main.cpp.obj
+.PHONY : week3/main.obj
 
 # target to build an object file
-week2/src/robot.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/week2.dir/build.make CMakeFiles/week2.dir/week2/src/robot.cpp.obj
-.PHONY : week2/src/robot.cpp.obj
+week3/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/week3.dir/build.make CMakeFiles/week3.dir/week3/main.cpp.obj
+.PHONY : week3/main.cpp.obj
 
-week2/src/robot.i: week2/src/robot.cpp.i
-.PHONY : week2/src/robot.i
+week3/main.i: week3/main.cpp.i
+.PHONY : week3/main.i
 
 # target to preprocess a source file
-week2/src/robot.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/week2.dir/build.make CMakeFiles/week2.dir/week2/src/robot.cpp.i
-.PHONY : week2/src/robot.cpp.i
+week3/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/week3.dir/build.make CMakeFiles/week3.dir/week3/main.cpp.i
+.PHONY : week3/main.cpp.i
 
-week2/src/robot.s: week2/src/robot.cpp.s
-.PHONY : week2/src/robot.s
+week3/main.s: week3/main.cpp.s
+.PHONY : week3/main.s
 
 # target to generate assembly for a file
-week2/src/robot.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/week2.dir/build.make CMakeFiles/week2.dir/week2/src/robot.cpp.s
-.PHONY : week2/src/robot.cpp.s
+week3/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/week3.dir/build.make CMakeFiles/week3.dir/week3/main.cpp.s
+.PHONY : week3/main.cpp.s
 
-week2/src/task.obj: week2/src/task.cpp.obj
-.PHONY : week2/src/task.obj
+week3/src/robot.obj: week3/src/robot.cpp.obj
+.PHONY : week3/src/robot.obj
 
 # target to build an object file
-week2/src/task.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/week2.dir/build.make CMakeFiles/week2.dir/week2/src/task.cpp.obj
-.PHONY : week2/src/task.cpp.obj
+week3/src/robot.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/week3.dir/build.make CMakeFiles/week3.dir/week3/src/robot.cpp.obj
+.PHONY : week3/src/robot.cpp.obj
 
-week2/src/task.i: week2/src/task.cpp.i
-.PHONY : week2/src/task.i
+week3/src/robot.i: week3/src/robot.cpp.i
+.PHONY : week3/src/robot.i
 
 # target to preprocess a source file
-week2/src/task.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/week2.dir/build.make CMakeFiles/week2.dir/week2/src/task.cpp.i
-.PHONY : week2/src/task.cpp.i
+week3/src/robot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/week3.dir/build.make CMakeFiles/week3.dir/week3/src/robot.cpp.i
+.PHONY : week3/src/robot.cpp.i
 
-week2/src/task.s: week2/src/task.cpp.s
-.PHONY : week2/src/task.s
+week3/src/robot.s: week3/src/robot.cpp.s
+.PHONY : week3/src/robot.s
 
 # target to generate assembly for a file
-week2/src/task.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/week2.dir/build.make CMakeFiles/week2.dir/week2/src/task.cpp.s
-.PHONY : week2/src/task.cpp.s
+week3/src/robot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/week3.dir/build.make CMakeFiles/week3.dir/week3/src/robot.cpp.s
+.PHONY : week3/src/robot.cpp.s
+
+week3/src/task.obj: week3/src/task.cpp.obj
+.PHONY : week3/src/task.obj
+
+# target to build an object file
+week3/src/task.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/week3.dir/build.make CMakeFiles/week3.dir/week3/src/task.cpp.obj
+.PHONY : week3/src/task.cpp.obj
+
+week3/src/task.i: week3/src/task.cpp.i
+.PHONY : week3/src/task.i
+
+# target to preprocess a source file
+week3/src/task.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/week3.dir/build.make CMakeFiles/week3.dir/week3/src/task.cpp.i
+.PHONY : week3/src/task.cpp.i
+
+week3/src/task.s: week3/src/task.cpp.s
+.PHONY : week3/src/task.s
+
+# target to generate assembly for a file
+week3/src/task.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/week3.dir/build.make CMakeFiles/week3.dir/week3/src/task.cpp.s
+.PHONY : week3/src/task.cpp.s
+
+week3/src/taskScheduler.obj: week3/src/taskScheduler.cpp.obj
+.PHONY : week3/src/taskScheduler.obj
+
+# target to build an object file
+week3/src/taskScheduler.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/week3.dir/build.make CMakeFiles/week3.dir/week3/src/taskScheduler.cpp.obj
+.PHONY : week3/src/taskScheduler.cpp.obj
+
+week3/src/taskScheduler.i: week3/src/taskScheduler.cpp.i
+.PHONY : week3/src/taskScheduler.i
+
+# target to preprocess a source file
+week3/src/taskScheduler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/week3.dir/build.make CMakeFiles/week3.dir/week3/src/taskScheduler.cpp.i
+.PHONY : week3/src/taskScheduler.cpp.i
+
+week3/src/taskScheduler.s: week3/src/taskScheduler.cpp.s
+.PHONY : week3/src/taskScheduler.s
+
+# target to generate assembly for a file
+week3/src/taskScheduler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/week3.dir/build.make CMakeFiles/week3.dir/week3/src/taskScheduler.cpp.s
+.PHONY : week3/src/taskScheduler.cpp.s
 
 # Help Target
 help:
@@ -209,16 +233,19 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... week2"
-	@echo "... week2/main.obj"
-	@echo "... week2/main.i"
-	@echo "... week2/main.s"
-	@echo "... week2/src/robot.obj"
-	@echo "... week2/src/robot.i"
-	@echo "... week2/src/robot.s"
-	@echo "... week2/src/task.obj"
-	@echo "... week2/src/task.i"
-	@echo "... week2/src/task.s"
+	@echo "... week3"
+	@echo "... week3/main.obj"
+	@echo "... week3/main.i"
+	@echo "... week3/main.s"
+	@echo "... week3/src/robot.obj"
+	@echo "... week3/src/robot.i"
+	@echo "... week3/src/robot.s"
+	@echo "... week3/src/task.obj"
+	@echo "... week3/src/task.i"
+	@echo "... week3/src/task.s"
+	@echo "... week3/src/taskScheduler.obj"
+	@echo "... week3/src/taskScheduler.i"
+	@echo "... week3/src/taskScheduler.s"
 .PHONY : help
 
 
